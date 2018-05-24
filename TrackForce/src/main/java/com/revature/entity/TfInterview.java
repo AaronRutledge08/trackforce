@@ -43,7 +43,7 @@ public class TfInterview implements java.io.Serializable {
 	// 1804
 	@Column(name = "TF_ASSOCIATE_FEEDBACK", length = 2000)
 	private String tfAssociateFeedback;
-	@Column(name = "TF_CLIENT_FEEDBACK", length = 2000)
+	@Column(name = "TF_CLIENT_FEEDBACK", length = 5000)
 	private String tfClientFeedback;
 	@Column(name = "TF_JOB_DESCRIPTION", length = 2000)
 	private String tfJobDescription;
@@ -51,12 +51,12 @@ public class TfInterview implements java.io.Serializable {
 	private Timestamp tfDateSalesIssued;
 	@Column(name = "TF_DATE_ASSOCIATE_ISSUED")
 	private Timestamp tfDateAssociateIssued;
-	@Column(name = "TF_IS_INTERVIEW_FLAGGED")
-	private Integer tfIsInterviewFlagged;
-	@Column(name = "TF_FLAG_REASON")
+	@Column(name = "TF_IS_INTERVIEW_FLAGGED", nullable = false)
+	private Integer tfIsInterviewFlagged = 0;
+	@Column(name = "TF_FLAG_REASON", length = 300)
 	private String tfFlagReason;
-	@Column(name = "TF_IS_CLIENT_FEEDBACK_VISIABLE")
-	private Integer tfIsClientFeedbackVisiable;
+	@Column(name = "TF_IS_CLIENT_FEEDBACK_VISIABLE", nullable = false)
+	private Integer tfIsClientFeedbackVisiable = 0;
 
 	public TfInterview() {
 	}
