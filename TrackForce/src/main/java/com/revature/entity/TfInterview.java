@@ -41,7 +41,7 @@ public class TfInterview implements java.io.Serializable {
 	private Timestamp tfInterviewDate;
 
 	// 1804
-	@Column(name = "TF_ASSOCIATE_FEEDBACK", length = 2000)
+	@Column(name = "TF_ASSOCIATE_FEEDBACK", length = 5000)
 	private String tfAssociateFeedback;
 	@Column(name = "TF_CLIENT_FEEDBACK", length = 5000)
 	private String tfClientFeedback;
