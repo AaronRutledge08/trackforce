@@ -2,6 +2,7 @@ package com.revature.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
@@ -29,4 +30,11 @@ public class InterviewResource {
 		return Response.status(200).build();
 	
 	}
+	
+	@Path("/{job-description}")
+	@PUT Response updateJopDescription(@PathParam("interviewid") int interviewid) {
+		return Response.status(200).build();
+		
+	}
+	
 }
