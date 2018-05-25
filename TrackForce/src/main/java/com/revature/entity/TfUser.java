@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement
 @Entity
-@Table(name = "TF_USER", schema="ADMIN")
+@Table(name = "TF_USER")
 public class TfUser implements java.io.Serializable {
 
     private static final long serialVersionUID = 706405344864879997L;

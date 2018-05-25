@@ -22,7 +22,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement
 @Entity
-@Table(name = "TF_ASSOCIATE", schema = "ADMIN")
+@Table(name = "TF_ASSOCIATE")
 public class TfAssociate implements java.io.Serializable {
 
 	/**
@@ -74,8 +74,7 @@ public class TfAssociate implements java.io.Serializable {
 	@XmlElement
 	@Column(name = "TF_CLIENT_START_DATE")
 	private Timestamp clientStartDate;
-	
-	@XmlElement
+
 	@Column(name = "TF_ISAPPROVED", nullable = false)
 	private Integer isApproved = 0; // default is Zero not approved
 
